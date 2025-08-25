@@ -1,0 +1,15 @@
+- type: ghostTheme
+  id: Cassandra
+  scale: 0.10, 0.10
+  name: Cassandra
+  sprite:
+    sprite: _Duty/Mobs/Ghosts/Cass.rsi
+    state: icon
+
+- type: ghostTheme
+  id: Sonic
+  scale: 0.10, 0.10
+  name: Sonic
+  sprite:
+    sprite: _Duty/Mobs/Ghosts/Sonic.rsi
+    state: icon
