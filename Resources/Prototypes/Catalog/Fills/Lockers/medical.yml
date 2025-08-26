@@ -14,6 +14,7 @@
       amount: !type:ConstantNumberSelector
         value: 2
     - id: Gauze
+    - id: ClothingEyesGlassesChemical
 
 - type: entity
   parent: LockerMedicine
@@ -64,6 +65,7 @@
       - id: UniformScrubsColorPurple
         weight: 0.05
     - id: ClothingMaskSterile
+    - id: ClothingEyesGlassesChemical
 
 - type: entity
   parent: LockerMedical
@@ -103,7 +105,7 @@
     - id: ClothingHeadsetMedical
     - id: ClothingMaskSterile
     - id: HandLabeler
-      prob: 0.5
+    - id: ClothingEyesGlassesChemical
 
 - type: entity
   parent: LockerChemistry
@@ -134,7 +136,11 @@
     - id: MedkitFilled
     - id: ClothingBackpackParamedic
     - id: HypoParamedic
-      prob: 0.3
+    - id: DefibrillatorCompact
+    - id: MedkitAdvancedFilled
+    - id: MedkitCombatFilled
+    - id: PowerCellHigh
+    - id: ClothingEyesGlassesChemical
 
 - type: entity
   parent: LockerParamedic

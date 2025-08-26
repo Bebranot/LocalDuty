@@ -19,6 +19,9 @@
   - Mining
   - Maintenance
   - External
+  special:
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplant ]
 
 - type: startingGear
   id: MiningSpecialistGear

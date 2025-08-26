@@ -41,6 +41,7 @@
   storage:
     back:
     - Flash
+    - HypoBrigMedic
 
 - type: chameleonOutfit
   id: BrigmedicChameleonOutfit

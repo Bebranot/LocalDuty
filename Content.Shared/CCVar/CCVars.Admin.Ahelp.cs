@@ -10,14 +10,14 @@ public sealed partial class CCVars
     /// </summary>
     /// <seealso cref="AhelpRateLimitCount"/>
     public static readonly CVarDef<float> AhelpRateLimitPeriod =
-        CVarDef.Create("ahelp.rate_limit_period", 2f, CVar.SERVERONLY);
+        CVarDef.Create("ahelp.rate_limit_period", 0, CVar.SERVERONLY);
 
     /// <summary>
     ///     How many ahelp messages are allowed in a single rate limit period.
     /// </summary>
     /// <seealso cref="AhelpRateLimitPeriod"/>
     public static readonly CVarDef<int> AhelpRateLimitCount =
-        CVarDef.Create("ahelp.rate_limit_count", 10, CVar.SERVERONLY);
+        CVarDef.Create("ahelp.rate_limit_count", 8, CVar.SERVERONLY);
 
     /// <summary>
     ///     Should the administrator's position be displayed in ahelp.

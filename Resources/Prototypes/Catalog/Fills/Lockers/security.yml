@@ -116,6 +116,8 @@
     - id: ClothingUniformJumpskirtBrigmedic
     - id: ClothingUniformJumpskirtOfLife
       prob: 0.1
+    - id: MedkitAdvancedFilled
+    - id: MedkitCombatFilled
     - id: SecurityMedkit  # Sunrise-edit
     - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
       prob: 0.15

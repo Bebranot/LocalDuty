@@ -18,8 +18,12 @@
   - Medical
   - Maintenance
   - External # Sunrise-Add
+  - Chemistry # Duty
   extendedAccess:
-  - Chemistry
+  - Security
+  special:
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplant ]
 
 - type: startingGear
   id: ParamedicGear

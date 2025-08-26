@@ -149,7 +149,7 @@ public sealed partial class SunriseCCVars : CVars
         CVarDef.Create("newlife.sponsor_only", false, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<int> NewLifeTimeout =
-        CVarDef.Create("newlife.timeout", 5, CVar.SERVERONLY);
+        CVarDef.Create("newlife.timeout", 1, CVar.SERVERONLY);
 
     /*
      * Servers Hub
@@ -162,7 +162,7 @@ public sealed partial class SunriseCCVars : CVars
     /// Список серверов отображаемых в хабе. Разделяются через запятую.
     /// </summary>
     public static readonly CVarDef<string> ServersHubList =
-        CVarDef.Create("servers_hub.urls", "", CVar.SERVERONLY);
+        CVarDef.Create("servers_hub.urls", "OmegaDuty", CVar.SERVERONLY);
 
     /// <summary>
     /// Простое название сервера для отображения в хабе.
@@ -211,7 +211,7 @@ public sealed partial class SunriseCCVars : CVars
         CVarDef.Create("lobby.lobby_opacity", 0.90f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<string> ServerName =
-        CVarDef.Create("lobby.server_name", "Sunrise Station", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("lobby.server_name", "LocalDuty Station", CVar.SERVER | CVar.REPLICATED);
 
     /*
      * Planet Prison
@@ -249,10 +249,10 @@ public sealed partial class SunriseCCVars : CVars
      */
 
     public static readonly CVarDef<bool> CryoTeleportEnable =
-        CVarDef.Create("cryo_teleport.enable", true, CVar.SERVERONLY);
+        CVarDef.Create("cryo_teleport.enable", false, CVar.SERVERONLY);
 
     public static readonly CVarDef<int> CryoTeleportTransferDelay =
-        CVarDef.Create("cryo_teleport.transfer_delay", 5, CVar.SERVERONLY);
+        CVarDef.Create("cryo_teleport.transfer_delay", 20, CVar.SERVERONLY);
 
     /*
      * Damage
@@ -300,7 +300,7 @@ public sealed partial class SunriseCCVars : CVars
         CVarDef.Create("vote.music_disable", true, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<bool> VoteDisableOOC =
-        CVarDef.Create("vote.disable_ooc", false, CVar.SERVERONLY);
+        CVarDef.Create("vote.disable_ooc", true, CVar.SERVERONLY);
 
     public static readonly CVarDef<bool> VotePause =
         CVarDef.Create("vote.pause", true, CVar.SERVERONLY);
@@ -325,7 +325,7 @@ public sealed partial class SunriseCCVars : CVars
      */
 
     public static readonly CVarDef<string> BanDiscordLink =
-        CVarDef.Create("cl.discord_link", "", CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
+        CVarDef.Create("cl.discord_link", "https://discord.gg/abEptUCJ", CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
 
     public static readonly CVarDef<string> BanTelegramLink =
         CVarDef.Create("cl.telegram_link", "", CVar.SERVER | CVar.REPLICATED | CVar.ARCHIVE);
@@ -335,13 +335,13 @@ public sealed partial class SunriseCCVars : CVars
      */
 
     public static readonly CVarDef<bool> MoodEnabled =
-        CVarDef.Create("mood.enabled", true, CVar.SERVER);
+        CVarDef.Create("mood.enabled", false, CVar.SERVER);
 
     public static readonly CVarDef<bool> MoodIncreasesSpeed =
-        CVarDef.Create("mood.increases_speed", true, CVar.SERVER);
+        CVarDef.Create("mood.increases_speed", false, CVar.SERVER);
 
     public static readonly CVarDef<bool> MoodDecreasesSpeed =
-        CVarDef.Create("mood.decreases_speed", true, CVar.SERVER);
+        CVarDef.Create("mood.decreases_speed", false, CVar.SERVER);
 
     /**
      * Jump
@@ -351,7 +351,7 @@ public sealed partial class SunriseCCVars : CVars
         CVarDef.Create("jump.enable", true, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<float> JumpDeadChance =
-        CVarDef.Create("jump.dead_chance", 0.001f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("jump.dead_chance", 0.0001f, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<float> JumpCooldown =
         CVarDef.Create("jump.cooldown", 0.600f, CVar.SERVER | CVar.REPLICATED);
@@ -379,21 +379,21 @@ public sealed partial class SunriseCCVars : CVars
      */
 
     public static readonly CVarDef<float> FlipDeadChance =
-        CVarDef.Create("flip.dead_chance", 0.001f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("flip.dead_chance", 0.00001f, CVar.SERVER | CVar.REPLICATED);
 
     /**
      * Slip
      */
 
     public static readonly CVarDef<float> SlipDeadChance =
-        CVarDef.Create("slip.dead_chance", 0.001f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("slip.dead_chance", 0.00001f, CVar.SERVER | CVar.REPLICATED);
 
     /**
      * Fall
      */
 
     public static readonly CVarDef<float> FallDeadChance =
-        CVarDef.Create("fall.dead_chance", 0.01f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("fall.dead_chance", 0.00001f, CVar.SERVER | CVar.REPLICATED);
 
     /**
      * VigersRay
@@ -425,10 +425,10 @@ public sealed partial class SunriseCCVars : CVars
      */
 
     public static readonly CVarDef<bool> DamageOverlayEnable =
-        CVarDef.Create("damage_overlay.enable", true, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("damage_overlay.enable", false, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<bool> DamageOverlaySelf =
-        CVarDef.Create("damage_overlay.self", true, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("damage_overlay.self", false, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     public static readonly CVarDef<bool> DamageOverlayStructures =
         CVarDef.Create("damage_overlay.structures", true, CVar.CLIENTONLY | CVar.ARCHIVE);
@@ -482,13 +482,13 @@ public sealed partial class SunriseCCVars : CVars
     /// Включены ли артефакты-предметы? Переключение этого в моменты игры динамически включает и выключает фичу
     /// </summary>
     public static readonly CVarDef<bool> EnableRandomArtifacts =
-        CVarDef.Create("random_artifacts.enable", false, CVar.SERVER | CVar.ARCHIVE);
+        CVarDef.Create("random_artifacts.enable", true, CVar.SERVER | CVar.ARCHIVE);
 
     /// <summary>
     /// Соотношение артефактов-предметов к обычным предметам.
     /// </summary>
     public static readonly CVarDef<float> ItemToArtifactRatio =
-        CVarDef.Create("random_artifacts.ratio", 0.55f, CVar.SERVER | CVar.ARCHIVE);
+        CVarDef.Create("random_artifacts.ratio", 0.055f, CVar.SERVER | CVar.ARCHIVE);
 
     /*
      * AntiSpam params
@@ -528,7 +528,7 @@ public sealed partial class SunriseCCVars : CVars
     /// Обычное: в сообщении, которое не проходит критерии, удалять не проходящие критерии части.
     /// </summary>
     public static readonly CVarDef<bool> ChatSanitizationAggressive =
-        CVarDef.Create("chatsan.aggressive", true, CVar.SERVER | CVar.ARCHIVE);
+        CVarDef.Create("chatsan.aggressive", false, CVar.SERVER | CVar.ARCHIVE);
 
     public static readonly CVarDef<bool> TracesEnabled =
         CVarDef.Create("opt.traces_enabled", true, CVar.CLIENTONLY | CVar.ARCHIVE);
