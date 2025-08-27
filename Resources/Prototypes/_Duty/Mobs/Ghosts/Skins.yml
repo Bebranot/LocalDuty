@@ -13,3 +13,11 @@
   sprite:
     sprite: _Duty/Mobs/Ghosts/Sonic.rsi
     state: icon
+
+- type: ghostTheme
+  id: WatcherGhostSkin
+  scale: 1, 1
+  name: Watcher
+  sprite:
+    sprite: _Duty/Mobs/Ghosts/Watcher.rsi
+    state: watcher
